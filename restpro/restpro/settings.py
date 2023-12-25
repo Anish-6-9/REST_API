@@ -38,10 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'rest_framework.authtoken',
 ]
 
 # our app
-EXTERNAL_APPS = ['restapp']
+EXTERNAL_APPS = ['restapp', 'user']
 INSTALLED_APPS.extend(EXTERNAL_APPS)
 
 MIDDLEWARE = [
